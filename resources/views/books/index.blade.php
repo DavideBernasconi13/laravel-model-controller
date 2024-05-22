@@ -5,12 +5,16 @@
 @section('content')
 <main>
     <h1>All Books</h1>
-<ul>
-    @foreach ($books as $book)
-    <li><a href="{{route('books.show', $book->id)}}">{{ $book->title }}</a></li>
+    <!-- <ul> -->
+    <div class="row g-3">
+        @foreach ($books as $item)
+            <div class="col-12 col-md-4 col-lg-3">
+                @include('partials.card')
+            </div>
+        @endforeach
+    </div>
 
-    @endforeach
-</ul>
+    <!-- </ul> -->
 
 </main>
 
