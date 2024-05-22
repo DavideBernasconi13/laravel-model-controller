@@ -12,3 +12,7 @@ $fa-font-path: "../webfonts" !default;
 h1 {
     color: $text-color;
 }
+
+main {
+    min-height: calc(100vh - 112px);
+}
